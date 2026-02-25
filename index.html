@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru" data-bs-theme="auto">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>МБОУ СОШ "Державинский Лицей"</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+
+<nav class="navbar navbar-expand-xl bg-body shadow-sm">
+  <div class="container">
+
+    <!-- ЛОГО -->
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <img src="https://ltdfoto.ru/images/2026/02/25/BEZ-NAZVANIY-1.jpg" 
+           alt="Логотип" width="40" height="40" class="rounded-circle">
+      <span class="fw-bold">Державинский лицей</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" 
+      data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item"><a class="nav-link active" href="#">Главная</a></li>
+
+        <!-- Основные разделы в dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Разделы
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Сведения об образовательной организации</a></li>
+            <li><a class="dropdown-item" href="#">Наши достижения</a></li>
+            <li><a class="dropdown-item" href="#">ГИА</a></li>
+            <li><a class="dropdown-item" href="#">Безопасность</a></li>
+            <li><a class="dropdown-item" href="#">Педагогам</a></li>
+            <li><a class="dropdown-item" href="#">Противодействие коррупции</a></li>
+            <li><a class="dropdown-item" href="#">Дистанционное обучение</a></li>
+            <li><a class="dropdown-item" href="#">Школьный спортивный клуб</a></li>
+            <li><a class="dropdown-item" href="#">Наставничество</a></li>
+            <li><a class="dropdown-item" href="#">Внеурочная деятельность</a></li>
+            <li><a class="dropdown-item" href="#">Дополнительное образование</a></li>
+            <li><a class="dropdown-item" href="#">Профориентация</a></li>
+            <li><a class="dropdown-item" href="#">Оздоровительная кампания</a></li>
+            <li><a class="dropdown-item" href="#">Контакты</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+      <!-- Переключатель темы -->
+      <div class="ms-3">
+        <select id="themeSwitcher" class="form-select">
+          <option value="auto">Системная</option>
+          <option value="light">Светлая</option>
+          <option value="dark">Тёмная</option>
+        </select>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+<!-- ===== БАННЕР ===== -->
+
+<section class="banner">
+  <img src="http://mydl.ru/wp-content/uploads/2016/11/l92.png" 
+       class="img-fluid w-100" alt="Баннер">
+</section>
+
+<!-- ===== ОПИСАНИЕ ===== -->
+
+<section class="container my-5 text-center">
+  <h1 class="fw-bold">МБОУ СОШ "Державинский Лицей"</h1>
+</section>
+
+<!-- ===== КАРТОЧКИ ===== -->
+
+<section class="container my-5">
+  <div class="row g-4">
+
+    <div class="col-md-4">
+      <div class="card custom-card h-100 text-center p-4">
+        <h5>Новости</h5>
+        <p>Последние события лицея.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card custom-card h-100 text-center p-4">
+        <h5>Объявления</h5>
+        <p>Важная информация для учеников и родителей.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card custom-card h-100 text-center p-4">
+        <h5>Мероприятия</h5>
+        <p>Ближайшие события и конкурсы.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="info" class="container my-5">
+  <h2 class="mb-4 text-center">Информация</h2>
+
+  <!-- ОБЪЯВЛЕНИЯ -->
+  <div id="announcements" class="mb-5">
+    <div class="d-flex justify-content-between align-items-center">
+      <h4>Объявления</h4>
+      <button id="addAnnouncementBtn" class="btn btn-sm btn-primary d-none">
+        Добавить
+      </button>
+    </div>
+
+    <div id="announcementsList" class="row g-3 mt-2"></div>
+  </div>
+
+  <!-- ВАЖНАЯ ИНФОРМАЦИЯ -->
+  <div class="mb-4">
+    <h4>Важная информация</h4>
+    <p>Актуальная информация для обучающихся и родителей.</p>
+  </div>
+
+  <!-- ПРИКАЗ -->
+  <div class="mb-4">
+    <h5>Приказ</h5>
+    <p>
+      «Об утверждении перечня документации, подготовка которой осуществляется 
+      педагогическими работниками при реализации основных общеобразовательных программ»
+    </p>
+
+    <p>
+      В случаях несоблюдения введенных ограничений педагогические работники
+      Республики Карелия могут позвонить на телефоны «горячей линии»:
+      8(8142) 76-91-51, 78-33-76, 78-48-75.
+    </p>
+
+    <p>
+      <a href="https://minedu.gov.karelia.ru/news/23-12-2022-v-karelii-rabotaet-goryachaya-liniya-podokumentatsionnoy-nagruzki-na-pedago" target="_blank">
+        Подробная информация
+      </a>
+    </p>
+
+    <img src="https://mydl.ru/wp-content/uploads/2023/12/minobraz_i_sporta-300x75.png" 
+         class="img-fluid mt-3">
+  </div>
+
+  <!-- ЦИФРОВОЙ ЛИКБЕЗ -->
+  <div>
+    <p>
+      На ресурсе проекта «Цифровой ликбез» 
+      <a href="https://digital-likbez.datalesson.ru/" target="_blank">
+        https://digital-likbez.datalesson.ru/
+      </a>
+      представлены уникальные анимированные видеоролики 
+      «12 шагов к цифровой грамотности для взрослых и детей».
+    </p>
+  </div>
+</section>
+
+<section class="bg-body-tertiary py-5">
+  <div class="container text-center">
+    <h2 class="mb-4">О нас в цифрах</h2>
+    <div class="row">
+
+      <div class="col-md-4">
+        <h1 class="display-5 fw-bold counter" data-target="5085">0</h1>
+        <p>Выпускников</p>
+      </div>
+
+      <div class="col-md-4">
+        <h1 class="display-5 fw-bold counter" data-target="195">0</h1>
+        <p>Золотых медалей</p>
+      </div>
+
+      <div class="col-md-4">
+        <h1 class="display-5 fw-bold counter" data-target="293">0</h1>
+        <p>Серебряных медалей</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="news" class="container my-5">
+  <div class="d-flex justify-content-between align-items-center">
+    <h2>Новости</h2>
+    <button id="addNewsBtn" class="btn btn-primary d-none">
+      Добавить новость
+    </button>
+  </div>
+
+  <div id="newsList" class="row g-4 mt-3"></div>
+</section>
+
+<section class="container my-5">
+  <h2 class="text-center mb-4">Полезные ссылки</h2>
+  <div class="row g-3">
+
+    <!-- 13 полей -->
+    <div class="col-6 col-md-3 col-lg-2" ><div class="link-box"></div></div>
+    <div class="col-6 col-md-3 col-lg-2" ><div class="link-box"></div></div>
+    <div class="col-6 col-md-3 col-lg-2" ><div class="link-box"></div></div>
+    <div class="col-6 col-md-3 col-lg-2" ><div class="link-box"></div></div>
+    <div class="col-6 col-md-3 col-lg-2" ><div class="link-box"></div></div>
+    <div class="col-6 col-md-3 col-lg-2" ><div class="link-box"></div></div>
+    <div class="col-6 col-md-3 col-lg-2" ><div class="link-box"></div></div>
+    <div class="col-6 col-md-3 col-lg-2" ><div class="link-box"></div></div>
+    <div class="col-6 col-md-3 col-lg-2" ><div class="link-box"></div></div>
+    <div class="col-6 col-md-3 col-lg-2" ><div class="link-box"></div></div>
+    <div class="col-6 col-md-3 col-lg-2" ><div class="link-box"></div></div>
+    <div class="col-6 col-md-3 col-lg-2" ><div class="link-box"></div></div>
+    <div class="col-6 col-md-3 col-lg-2" ><div class="link-box"></div></div>
+
+  </div>
+</section>
+
+<!-- ===== СВЕДЕНИЯ ===== -->
+
+<section class="container my-5">
+  <h2 class="text-center mb-4">Сведения об образовательной организации</h2>
+
+  <div class="row g-4">
+
+    <div class="col-md-4">
+      <h6 class="fw-bold">Полное наименование</h6>
+      <p>Муниципальное бюджетное общеобразовательное учреждение 
+      Петрозаводского городского округа «Державинский лицей».</p>
+
+      <h6 class="fw-bold">Год создания</h6>
+      <p>1991</p>
+    </div>
+
+    <div class="col-md-4">
+      <h6 class="fw-bold">Адрес</h6>
+      <p>185005, Республика Карелия, г. Петрозаводск,
+      ул. Чернышевского, д.14а</p>
+
+      <h6 class="fw-bold">Телефоны</h6>
+      <p>Директор Сергеева Раиса Петровна <b>(88142)733219</b></pp>
+      <p>Вахта <b>(88142)734053</b></p>
+      <p>E-mail: <b>derlyceum@mail.ru</b></p>
+    </div>
+
+    <div class="col-md-4">
+      <h6 class="fw-bold">Учредитель</h6>
+      <p>Администрация Петрозаводского городского округа</p>
+    </div>
+
+  </div>
+</section>
+
+<footer class="bg-body-tertiary text-center py-4 mt-5">
+  © 2026 МБОУ СОШ "Державинский Лицей"
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="theme.js"></script>
+
+</body>
+</html>
