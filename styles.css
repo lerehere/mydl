@@ -1,0 +1,36 @@
+.banner img {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.custom-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid var(--bs-border-color);
+}
+
+.custom-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Светлая тема */
+[data-bs-theme="light"] .custom-card:hover {
+  background-color: #e7f1ff;
+}
+
+/* Тёмная тема */
+[data-bs-theme="dark"] .custom-card:hover {
+  background-color: #2a2a2a;
+}
+.link-box {
+  height: 80px;
+  border: 1px dashed var(--bs-border-color);
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.link-box:hover {
+  background-color: var(--bs-primary);
+  opacity: 0.2;
+}
