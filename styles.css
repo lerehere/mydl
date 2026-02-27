@@ -21,7 +21,7 @@
 
 /* Тёмная тема */
 [data-bs-theme="dark"] .custom-card:hover {
-  background-color: #2a2a2a;
+  background-color: #382222;
 }
 .link-box {
   height: 80px;
@@ -33,4 +33,101 @@
 .link-box:hover {
   background-color: var(--bs-primary);
   opacity: 0.2;
+}
+/* ===== КНОПКИ РАЗДЕЛОВ ===== */
+
+.section-btn {
+  display: block;
+  padding: 14px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: var(--bs-body-bg);
+  border: 1px solid var(--bs-border-color);
+  text-decoration: none;
+  color: var(--bs-body-color);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.section-btn:hover {
+  background-color: #6f42c1; /* фиолетовый */
+  color: white;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(111,66,193,0.3);
+}
+
+.section-btn:active {
+  transform: scale(0.97);
+}
+.file-frame {
+  width: 100%;
+  height: 600px;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 12px;
+}
+/* ===== КАТЕГОРИИ ===== */
+
+.category-card {
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid var(--bs-border-color);
+  background-color: var(--bs-body-bg);
+  transition: 0.3s ease;
+}
+
+.category-card:hover {
+  box-shadow: 0 8px 25px rgba(111,66,193,0.08);
+}
+
+.category-title {
+  margin-bottom: 15px;
+  font-weight: 600;
+  border-left: 4px solid #6f42c1;
+  padding-left: 10px;
+}
+.section-label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.section-select {
+  border-radius: 12px;
+  padding: 10px;
+  transition: 0.3s ease;
+}
+
+.section-select:focus {
+  border-color: #6f42c1;
+  box-shadow: 0 0 0 0.2rem rgba(111,66,193,0.2);
+}
+.search-input {
+  border-radius: 20px;
+}
+
+.search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  max-height: 300px;
+  overflow-y: auto;
+  display: none;
+  z-index: 1000;
+}
+
+.search-results a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  transition: 0.2s;
+}
+
+.search-results a:hover {
+  background: #f3e8ff;
+  color: #6f42c1;
 }
